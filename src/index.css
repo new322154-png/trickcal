@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; }
+body { margin: 0; }
+
+@layer components {
+  .btn {
+    @apply rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium shadow-sm transition hover:bg-slate-100 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-40;
+  }
+}
